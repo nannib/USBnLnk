@@ -15,5 +15,6 @@ You can create an **EXEcutable** file for Windows using this command::
 
  **pyinstaller --hidden-import babel.numbers --onefile main.py**
 
-![image](https://github.com/nannib/USBnLnk/assets/12171140/ba5be7c9-4a62-4b2e-985f-5f37bf5fc3e0)
+![image](https://github.com/nannib/USBnLnk/assets/12171140/287f55b8-b3c1-4729-8c26-09167c2065a8)
+
 
