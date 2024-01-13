@@ -105,7 +105,7 @@ class USBQueryApp:
 
  # Display the results in the text area
         self.result_text.delete(1.0, tk.END)  # Clear the text area
-        if usb_matches.empty and lnk_matches.empty:
+        if usb_matches.empty:
             self.result_text.insert(tk.END, "No data found in the selected time interval!\n")
         for index, row in usb_matches.iterrows():
              self.result_text.insert(tk.END, f"USB: {row['Friendly Name']} S/N:{row['Serial Number']}\n")
