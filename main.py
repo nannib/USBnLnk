@@ -21,6 +21,7 @@ class USBQueryApp:
         # Run external programs
         self.run_external_program(["python", "nb_usb.py"])
         self.run_external_program(["python", "lnkfile.py"])
+        
         # Create Tkinter variables
         self.start_datetime_var = tk.StringVar()
         self.end_datetime_var = tk.StringVar()
