@@ -45,7 +45,7 @@ if result.returncode != 0:
 
 # Inizializza le variabili
 usb_entries = []
-time.sleep(1)
+time.sleep(2)
 # Leggi il file usbstor.txt
 with open(usbstor_txt_path, 'r', encoding='utf-16') as file:
     content = file.read()

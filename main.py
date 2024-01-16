@@ -62,6 +62,9 @@ class USBQueryApp:
 
         # Button to export data to CSV
         ttk.Button(root, text="Export CSV", command=self.export_to_csv).grid(row=0, column=6, rowspan=3, padx=10, pady=5)
+        
+        # Button to reload registry
+        ttk.Button(root, text="RELOAD VALUES",style="Blue.TButton", command=self.reload_values).grid(row=0, column=6, rowspan=5, padx=10, pady=7)
 
         # Text area to display results
         self.result_text = scrolledtext.ScrolledText(root, width=122, height=25, wrap=tk.WORD)
@@ -69,7 +72,13 @@ class USBQueryApp:
 
         # Red button to exit the program
         ttk.Button(root, text="Exit", style="Red.TButton", command=root.destroy).grid(row=3, column=6, padx=10, pady=5)
-
+    
+    def reload_values(self):
+        self.result_text.delete(1.0, tk.END)  # Clear the text area
+        self.result_text.insert(tk.END, " ")
+        self.run_external_program(["python", "nb_usb.py"])
+        self.run_external_program(["python", "lnkfile.py"])
+        
     def execute_query(self):
         # Read CSV files
         usb_data = pd.read_csv("usb_history.csv")
