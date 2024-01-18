@@ -34,9 +34,9 @@ def parse_lnk_file(lnk_filepath):
                 access_time = get_field_value(lnk_info, 'Access Time')
                 
                 if format_with_tenths(parse_lnk_time(access_time)) == formatted_time:
-                    access_time="1899-01-16 18:45:00.309606"
-                    creation_time="1899-01-16 18:45:00.309606"
-                    modification_time="1899-01-16 18:45:00.309606"
+                    access_time="1970-01-01 00:00:00.000000"
+                    creation_time="1970-01-01 00:00:00.000000"
+                    modification_time="1970-01-01 00:00:00.000000"
                 
                 used_path = get_field_value(lnk_info, 'Used Path')
                 if not "%INTERNET" in used_path and not "%UNKNOWN" in used_path:
@@ -68,9 +68,9 @@ def parse_lnk_file(lnk_filepath):
                 modification_time = get_field_value(lnk_info, 'Modification Time')
                 access_time = get_field_value(lnk_info, 'Access Time')
                 if format_with_tenths(parse_lnk_time(access_time)) == formatted_time:
-                    access_time="1899-01-16 18:45:00.309606"
-                    creation_time="1899-01-16 18:45:00.309606"
-                    modification_time="1899-01-16 18:45:00.309606"
+                    access_time="1970-01-01 00:00:00.000000"
+                    creation_time="1970-01-01 00:00:00.000000"
+                    modification_time="1970-01-01 00:00:00.000000"
                 
 
                 # Stampa a schermo
