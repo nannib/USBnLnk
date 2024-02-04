@@ -1,5 +1,5 @@
 # USBnLnk
-This program can correlate the dates of USB mass device connections with recent files and  export a report in CSV format
+This tool can correlate the dates of USB mass device connections with recent files and  export a report in CSV format
 
 It runs on Windows 8,10,11 - tested with Python 3.8.6
 
