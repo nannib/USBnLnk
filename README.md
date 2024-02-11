@@ -22,7 +22,7 @@ it creates the report and the two CSV files (list of usb devices and list of rec
 
 You can create an **EXEcutable** file for Windows using this command::
 
- **pyinstaller --hidden-import babel.numbers --onefile main.py**
+ **pyinstaller --clean --hidden-import babel.numbers --onefile --add-binary nircmd.exe;. --add-data nb_usb.py;. --add-data lnkfile.py;. main.py**
 
 ![image](https://github.com/nannib/USBnLnk/assets/12171140/287f55b8-b3c1-4729-8c26-09167c2065a8)
 
