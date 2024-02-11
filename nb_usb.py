@@ -32,7 +32,7 @@ with open(csv_filename, 'w', newline='', encoding='utf-8') as csvfile:
         csv_writer = csv.writer(csvfile)
 
 # Ottieni il percorso del file Python
-python_file_path = os.path.dirname(os.path.abspath(__file__))
+python_file_path = os.path.join(os.getcwd(),'')
 timestamp_file = time.strftime("%Y%m%d%H%M%S")
 usbstor_txt_path = os.path.join(python_file_path, f'usbstor_{timestamp_file}.txt')
 

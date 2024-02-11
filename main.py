@@ -11,6 +11,8 @@ from tkcalendar import DateEntry
 import pandas as pd
 import time
 import subprocess
+import lnkfile
+import nb_usb
 
 class USBQueryApp:
     def __init__(self, root):

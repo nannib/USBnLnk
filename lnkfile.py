@@ -94,8 +94,8 @@ def get_field_value(lnk_info, field):
     return value
 
 def write_to_csv(lnk_filepath, volume_type, volume_serial_number, user_path, creation_time, modification_time, access_time):
-    csv_filename = 'lnk_info.csv'
-
+    csv_filename = os.path.join(os.getcwd(),'lnk_info.csv')
+    
     # Scrivi le informazioni nel file CSV
     with open(csv_filename, 'a', newline='', encoding='utf-8') as csvfile:
         csv_writer = csv.writer(csvfile)
@@ -117,11 +117,10 @@ def read_recent_folder():
                 lnk_filepath = os.path.join(root, file)
                 parse_lnk_file(lnk_filepath)
 
-if __name__ == "__main__":
-    csv_filename = 'lnk_info.csv'
-    with open(csv_filename, 'w', newline='', encoding='utf-8') as csvfile:
-        csv_writer = csv.writer(csvfile)
-    read_recent_folder()
+csv_filename = os.path.join(os.getcwd(),'lnk_info.csv')
+with open(csv_filename, 'w', newline='', encoding='utf-8') as csvfile:
+     csv_writer = csv.writer(csvfile)
+     read_recent_folder()
 
 
 
