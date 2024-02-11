@@ -24,6 +24,7 @@ You can create an **EXEcutable** file for Windows using this command::
 
  **pyinstaller --clean --hidden-import babel.numbers --onefile --add-binary nircmd.exe;. --add-data nb_usb.py;. --add-data lnkfile.py;. main.py**
 
-![image](https://github.com/nannib/USBnLnk/assets/12171140/287f55b8-b3c1-4729-8c26-09167c2065a8)
+![image](https://github.com/nannib/USBnLnk/assets/12171140/ff2aed33-77be-4748-a8d4-16de5c8c2134)
+
 
 
